@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오-샘플</title>
+    <!-- 웹연결 -->
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- 사용자파일 -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/scroll.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Intro</a> <!--nav[0] -->
+            <a href="#">Profile</a>
+            <a href="#">webDesign</a>
+            <a href="#">etcDesign</a>
+            <a href="#">Contact</a>
+        </nav>
+        <p>1234@gmail.com</p><!-- 내연락처, 나는 어떤사람이다 포부를 쓸 수도 있다. -->
+    </header>
+    <div class="swiper" id="wrap"><!-- 추가아이디,클래스 필수로 줘야한다. -->
+        <div class="swiper-wrapper">
+            <div class="swiper-slide intro"><!-- 추가클래스명은 변경가능 --> 
+                <h1>portfolio<br><em>2025</em></h1>
+                <h2>저는 OOOOO 디자이너 or 개발자입니다!</h2>
+                <p>제 포트폴리오에 와주셔서 감사합니다.</p>
+            </div> 
+            <div class="swiper-slide profile">
+                <div class="container">
+                    <div class="photo_info">
+                        <img src="#" alt=""> <!-- 내사진 -->
+                        <div class="info">
+                            <li>홍길동 | 00.12.11 </li>
+                            <li>010-1234-4567</li><!-- 카카오톡QR도 가능 -->
+                            <li>web@gmail.com</li>
+                            <li>http://gitHub.com/web</li> <!-- 깃허브사이트 눌렀을 때가라고 링크 걸어 주는 거 좋음 -->
+                        </div>
+                    </div>
+                    <div class="resume">
+                        <!--학력&수강이력 -->
+                        <ul class="career1">
+                            <li><span>2025-08</span><em>프론트엔드 반응형웹디자인&웹퍼블리셔 양성과정 수료(예정)</em></li>
+                            <li><span>2020-02</span><em>OOO대학 OO과 졸업</em></li>
+                            <li><span>2020-02</span><em>OOO고등학교 OO과 졸업</em></li><!-- 쓰기도 하고 안쓰기도 하고 -->
+                        </ul>
+                        <!-- 경력&알바&수상 -->
+                        <ul class="career2"></ul><!-- 디자인에 관련없으면 쓰지말고 자격증있으면 쓰기, 운전면허 포함, 디자인 관련없어도 됨 -->
+                        <!-- 스킬 -->
+                        <ul class="skill">
+                            <li><span>photoshop</span><em>배너디자인, 포스터디자인, 자막디자인, 상세페이지디자인, 광고 콘텐츠 디자인</em></li><!-- 이미지넣을거면 느낌,크기 통일해서 넣기 -->
+                            <li><span>illustrator</span><em>로고, 캐릭터, 명함, 패키지디자인을 만들 수 있다.</em></li>
+                            <li><span>figma</span><em>피그마 이용해서 웹디자인,앱 디자인 할 수 있다.</em></li><!-- 결과로 뭘 낼 수 있는지 -->
+                            <li><span>html&css</span><em>웹표준&웹접근성에 맞게 최신 코드를 다룰 수 있다.</em></li>
+                            <li><span>javascript</span><em>자바스크립트 기초를 이해하고, 팁 협업에 도움이 될 수 있다 or 협업을 이해할 수 있다//로그인 유효성 검사 및 무한스크롤, 슬라이드, 메뉴 등 다양한 웹에 들어가는 동적 기능을 할 수 있다. // 웹에 들어가는 동적인 기능을 할 수 있다, 메뉴:,슬라이드: 로 작성해도 됨</em></li>
+                            <li><span>plugin</span><em>swiper, scrollTrigger 활용가능</em></li>
+                            <li><span>jquery</span><em>DOM요소에 들어가는 빠른 동적 애니메이션을 만들 수 있다.</em></li>
+                            <li><span>react</span><em>State, Props 등 다양한 훅을 이용해서 웹/앱을 개발할 수 있다.</em></li>
+                            <li><span>git&gitHub</span><em>git 명령을 이용해 gitHub로 개인작업과 원활한 협업을 할 수 있다.</em></li>
+                            <li><span>프리미어프로</span><em>간단한 컷 편집, 자막 편집을 할 수 있다.</em></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide project">
+                <div class="container">
+                    <div class="swiper" id="project_swiper">
+                        <!--필수-->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1"><!-- 원본사이트링크버튼 꼭 같이 -->
+                                <div class="thumnail"><img src="#" alt=""><!-- 미리보기이미지 ex.목업 --></div>
+                                <ul class="contents">
+                                    <li>프로젝트1. 이케아</li>
+                                    <li>2025.07(30H)</li> <!-- 물결사용해서 디테일하게 써도됨 -->
+                                    <li>사용 프로그램</li><!-- 이미지도 가능 -->
+                                    <li>figma, photoshop, html, css, javascript</li>
+                                    <li>반응형웹(1920-800-600-320)</li><!-- 들어갈때만 쓰기 -->
+                                    <li>제작페이지 : index, login, 상품리스트, 상품상세</li>
+                                    <li>
+                                        <a href="https://아이디.github.io/저장소명" target="_blank">프로토타입(gitHub)</a>
+                                        <a href="#" target="_blank">기획서</a><!-- 재생 눌러서 나오는 결과 화면 기준으로 올바르게 나타나는 지 확인 후 미리보기 상태->주소 공유->링크복붙 -->
+                                        <a href="#" target="_blank">피그마 프로토타입보기</a>
+                                        <a href="https://ikea.com" target="_blank">원본 이케아 보기</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide slide2">slide2</div>
+                            <div class="swiper-slide slide3">slide3</div>
+                        </div>
+                    </div>
+                    <!-- 넘어가는 부분 바깥쪽에 버튼, 슬라이드 두고싶으면 swiper의 형제로 둬야한다. -->
+                    <div class="swiper-button-prev"></div><!-- 스와이퍼-기본적으로 앱솔루트 내장되어있음,부모한테 relative줘야함. 그 전엔 부모가 body임 -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+            <div class="swiper-slide design">
+                <div class="container">
+                    <h2>Design</h2>
+                    <p>배너, SNS광고, 상세페이지 모음</p>
+                    <div class="swiper" id="sns_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1"><img src="./images/design/sns/sns1.jpg" alt=""></div>
+                            <div class="swiper-slide slide2"><img src="./images/design/sns/sns2.jpg" alt=""></div>
+                            <div class="swiper-slide slide3"><img src="./images/design/sns/sns3.jpg" alt=""></div>
+                            <div class="swiper-slide slide4"><img src="./images/design/sns/sns4.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide contact">slide3</div>
+        </div>
+    </div>
+    <!-- 디자인 프로젝트 실행 팝업 -->
+    <div class="popup_bg">
+        <div class="popup">
+            <img src="./images/design/sns/sns1.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

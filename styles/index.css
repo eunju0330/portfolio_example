@@ -1,0 +1,103 @@
+header {
+    position:fixed; left:0; top:0;
+    background-color:rgba(255,255,255,0.8);
+    width:100%; height:60px;
+    z-index:900;
+}
+header nav {}
+header nav a {}
+header p {}
+#wrap {
+    height:100vh;
+}
+#wrap .swiper-wrapper {}
+#wrap .swiper-wrapper .intro {
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:center; align-items:center;
+    text-align:center;
+    background-color:#8DBCC7;
+}
+#wrap .swiper-wrapper .profile {background-color:#A4CCD9;}
+#wrap .swiper-wrapper .project {background-color:#C4E1E6;}
+#wrap .swiper-wrapper .contact {background-color:#EBFFD8;}
+/* ------------------------intro 1행 */
+#wrap .swiper-wrapper .intro h1 {font-size:4rem;}
+#wrap .swiper-wrapper .intro h1 em {font-size:2rem;}
+#wrap .swiper-wrapper .intro h2 {margin:20px 0 0;}
+#wrap .swiper-wrapper .intro p {line-height:1.7;}
+/* ------------------------intro 2행 */
+#wrap .swiper-wrapper .profile .container {
+    width:1000px; margin:90px auto 0;
+    display:flex; justify-content:space-between;
+    background-color:rgba(255,255,255,0.5); height:85vh;
+    padding:40px; border-radius:25px;
+}
+#wrap .swiper-wrapper .profile .container .photo_info {width:40%;}
+#wrap .swiper-wrapper .profile .container .photo_info img {}
+#wrap .swiper-wrapper .profile .container .photo_info .info {}
+#wrap .swiper-wrapper .profile .container .photo_info .info li {}
+#wrap .swiper-wrapper .profile .container .resume {width:60%;}
+#wrap .swiper-wrapper .profile .container .resume ul {margin:0 0 50px;} 
+#wrap .swiper-wrapper .profile .container .resume ul li {
+    border-bottom:1px solid #a7a7a7; padding:10px 5px;
+    display:flex; font-size:0.875rem;
+} 
+#wrap .swiper-wrapper .profile .container .resume ul li span {
+    width:100px; font-weight:600;
+}
+#wrap .swiper-wrapper .profile .container .resume ul li em {
+    line-height:1.5;
+} 
+/* ------------------------project 3행 */
+#wrap .swiper-wrapper .project {}
+#wrap .swiper-wrapper .project .container {
+    width:1000px; margin:90px auto 0;
+    background-color:aqua; /* 스와이퍼에 들어간 것 같은 착각할 수 있음. 맥스콘텐츠 기본값때문이다 */
+    padding:80px 0;
+    position:relative; /* 부모설정! 이 영역 안으로 기본 앱솔루트설정이던 스크롤, 화살표 들어옴 */
+}
+#wrap .swiper-wrapper .project .container #project_swiper {
+    border:2px solid #000; 
+    width:800px; height:500px;
+}
+/* ------------------------design 4행 */
+#wrap .swiper-wrapper .design .container {
+    width:1000px; margin:90px auto 0; padding:20px;
+    background:pink;
+}
+#wrap .swiper-wrapper .design .container h2 {}
+#wrap .swiper-wrapper .design .container h2+p {}
+#wrap .swiper-wrapper .design .container #sns_swiper {/* swiper-wrapper, swiper-slide 여긴 터치 x */
+    width:800px; margin:50px auto 0;
+    height:200px;
+}
+#wrap .swiper-wrapper .design .container #sns_swiper .swiper-wrapper {
+    transition-timing-function:linear; /* 가속도일정하게, 일정하게 흘러가게 할 수 있다. */
+}
+#wrap .swiper-wrapper .design .container #sns_swiper .swiper-slide {
+    cursor:pointer; /* 굳이 태그 고치지 않고 커서 손가락모양으로 바꾸는 법 */
+}
+#wrap .swiper-wrapper .design .container #sns_swiper .swiper-slide:hover {
+    opacity:0.5;
+    transform:rotate(2deg);
+}
+#wrap .swiper-wrapper .design .container #sns_swiper .swiper-slide img {
+    width:100%;
+}
+/* 디자인팝업 */
+.popup_bg {
+    position:fixed; left:0; top:0;
+    z-index:800;
+    background-color:rgba(0,0,0,0.4);
+    height:100vh; width:100%;
+    display:none; /* 초반 숨기기, 부모한테만 설정 */
+}
+.popup_bg .popup {
+    width:700px; margin:60px auto 0;
+    height:80vh;
+    overflow:auto;/* 크기를 정하고 나머지는 스크롤을 만들어라라는 뜻으로 auto설정 */
+}
+.popup_bg .popup img {
+    width:100%;
+}
